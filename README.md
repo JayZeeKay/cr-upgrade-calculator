@@ -6,7 +6,7 @@ In a mobile game called Clash Royale, you play battles against other players wit
 
 ## Stats
 So what can a deck tell us?
-Well, we can see:
+Well, we can see for each card:
 * Name
 * Level
 * Card Amount
