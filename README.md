@@ -10,6 +10,7 @@ Well, we can see:
 * Name
 * Level
 * Card Amount
+
 There are more stats but these are the ones of focus. With this, we can then infer:
 * The cost to upgrade a card to a certain level
 * The amount of cards needed to upgrade a card to a certain level
