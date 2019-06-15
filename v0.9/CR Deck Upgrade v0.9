@@ -1,0 +1,491 @@
+var deck = {
+  "1": {
+    "name": "",
+    "level": "",
+    "cardAmount": "",
+    "rarity": "",
+    "cost": "",
+    "cardNeeded": "",
+    "time": ""
+  }, 
+  "2": {
+    "name": "",
+    "level": "",
+    "cardAmount": "",
+    "rarity": "",
+    "cost": "",
+    "cardNeeded": "",
+    "time": ""
+  }, 
+  "3": {
+    "name": "",
+    "level": "",
+    "cardAmount": "",
+    "rarity": "",
+    "cost": "",
+    "cardNeeded": "",
+    "time": ""
+  }, 
+  "4": {
+    "name": "",
+    "level": "",
+    "cardAmount": "",
+    "rarity": "",
+    "cost": "",
+    "cardNeeded": "",
+    "time": ""
+  }, 
+  "5": {
+    "name": "",
+    "level": "",
+    "cardAmount": "",
+    "rarity": "",
+    "cost": "",
+    "cardNeeded": "",
+    "time": ""
+  }, 
+  "6": {
+    "name": "",
+    "level": "",
+    "cardAmount": "",
+    "rarity": "",
+    "cost": "",
+    "cardNeeded": "",
+    "time": ""
+  }, 
+  "7": {
+    "name": "",
+    "level": "",
+    "cardAmount": "",
+    "rarity": "",
+    "cost": "",
+    "cardNeeded": "",
+    "time": ""
+  }, 
+  "8": {
+    "name": "",
+    "level": "",
+    "cardAmount": "",
+    "rarity": "",
+    "cost": "",
+    "cardNeeded": "",
+    "time": ""
+  }
+}
+
+var rarity = {
+  "Xbow": "EPIC",
+  "Tesla": "COMMON",
+  "Ice Golem": "RARE",
+  "Archers": "COMMON",
+  "Skeletons": "COMMON",
+  "Ice Spirit": "COMMON",
+  "Log": "LEGENDARY",
+  "Fireball": "RARE",
+}
+
+var rarity = {
+  
+  "Xbow": "EPIC",
+  "Tesla": "COMMON",
+  "Ice Golem": "RARE",
+  "Archers": "COMMON",
+  "Skeletons": "COMMON",
+  "Ice Spirit": "COMMON",
+  "Log": "LEGENDARY",
+  "Fireball": "RARE",
+  
+  "Giant Snowball": "COMMON",
+  "Goblins": "COMMON",
+  "Zap": "COMMON",
+  "Bats": "COMMON",
+  "Fire Spirits": "COMMON",
+  "Spear Goblins": "COMMON",
+  "Knight": "COMMON",
+  "Bomber": "COMMON",
+  "Skeleton Barrel": "COMMON",
+  "Cannon": "COMMON",
+  "Goblin Gang": "COMMON",
+  "Minion": "COMMON",
+  "Arrows": "COMMON",
+  "Mortar": "COMMON",
+  "Barbarians": "COMMON",
+  "Rascals": "COMMON",
+  "Minion Horde": "COMMON",
+  "Royal Giant": "COMMON",
+  "Elite Barbarians": "COMMON",
+  "Royal Recruits": "COMMON",
+  "Heal": "RARE",
+  "Tombstone": "RARE",
+  "Dart Goblin": "RARE",
+  "Mega Minion": "RARE",
+  "Valkyrie": "RARE",
+  "Flying Machine": "RARE",
+  "Musketeer": "RARE",
+  "Mini Pekka": "RARE",
+  "Zappies": "RARE",
+  "Hog Rider": "RARE",
+  "Bomb Tower": "RARE",
+  "Furnace": "RARE",
+  "Battle Ram": "RARE",
+  "Royal Hogs": "RARE",
+  "Giant": "RARE",
+  "Inferno Tower": "RARE",
+  "Wizard": "RARE",
+  "Goblin Hut": "RARE",
+  "Elixir Collector": "RARE",
+  "Rocket": "RARE",
+  "Barbarian Hut": "RARE",
+  "Three Musketeers": "RARE",
+  "Mirror": "EPIC",
+  "Rage": "EPIC",
+  "Barbarian Barrel": "EPIC",
+  "Goblin Barrel": "EPIC",
+  "Guards": "EPIC",
+  "Tornado": "EPIC",
+  "Clone": "EPIC",
+  "Skeleton Army": "EPIC",
+  "Wall Breakers": "EPIC",
+  "Freeze": "EPIC",
+  "Dark Prince": "EPIC",
+  "Hunter": "EPIC",
+  "Poison": "EPIC",
+  "Baby Dragon": "EPIC",
+  "Executioner": "EPIC",
+  "Electro Dragon": "EPIC",
+  "Cannon Cart": "EPIC",
+  "Witch": "EPIC",
+  "Bowler": "EPIC",
+  "Balloon": "EPIC",
+  "Prince": "EPIC",
+  "Goblin Giant": "EPIC",
+  "Lightning": "EPIC",
+  "Giant Skeleton": "EPIC",
+  "Pekka": "EPIC",
+  "Golem": "EPIC",
+  "Royal Ghost": "LEGENDARY",
+  "Bandit": "LEGENDARY",
+  "Miner": "LEGENDARY",
+  "Princess": "LEGENDARY",
+  "Ice Wizard": "LEGENDARY",
+  "Magic Archer": "LEGENDARY",
+  "Night Witch": "LEGENDARY",
+  "Electro Wizard": "LEGENDARY",
+  "Inferno Dragon": "LEGENDARY",
+  "Lumberjack": "LEGENDARY",
+  "Ram Rider": "LEGENDARY",
+  "Graveyard": "LEGENDARY",
+  "Sparky": "LEGENDARY",
+  "Mega Knight": "LEGENDARY",
+  "Lavahound": "LEGENDARY",
+  
+}
+
+var upgradeCost = {
+  "1": 0,
+  "2": 5,
+  "3": 20,
+  "4": 50,
+  "5": 150,
+  "6": 400,
+  "7": 1000,
+  "8": 2000,
+  "9": 4000,
+  "10": 8000,
+  "11": 20000,
+  "12": 50000,
+  "13": 100000,
+  "14": "how"
+}
+
+var cardAmountCommon = {
+  "1": "1",
+  "2": "2",
+  "3": "4",
+  "4": "10",
+  "5": "20",
+  "6": "50",
+  "7": "100",
+  "8": "200",
+  "9": "400",
+  "10": "800",
+  "11": "1000",
+  "12": "2000",
+  "13": "5000"
+}
+
+var cardAmountRare = {
+  "3": "1",
+  "4": "2",
+  "5": "4",
+  "6": "10",
+  "7": "20",
+  "8": "50",
+  "9": "100",
+  "10": "200",
+  "11": "400",
+  "12": "800",
+  "13": "1000"
+}
+
+var cardAmountEpic = {
+  "6": "1",
+  "7": "2",
+  "8": "4",
+  "9": "10",
+  "10": "20",
+  "11": "50",
+  "12": "100",
+  "13": "200",
+}
+
+var cardAmountLegendary = {
+  "9": "1",
+  "10": "2",
+  "11": "4",
+  "12": "10",
+  "13": "20",
+}
+
+var totalGold = 0;
+var totalTime = 0;
+var totalCardAmountCOMMON = 0;
+var totalCardAmountRARE = 0;
+var totalCardAmountEPIC = 0;
+var totalCardAmountLEGENDARY = 0;
+var info = "";
+
+README();
+
+function README(){
+  setText("txt_area_calc", "Welcome to JayZeeKay's CR Deck Upgrade Calculator! \nPut in the details of your deck, including name, level, and current cards that you have. \nPopdown menu for card name. The left textbox below the popdown menu is the level. The right textbox below the popdown menu is the card amount.\nUnfortunately, this calculator is only truely correct after level 10 cards. The cost to upgrade calculated before level 10 will by off by a few thousand gold. Sorry for the laziness, may fix it later.")
+}
+
+function deckUpgrade() {
+  console.log("deckUpgrade()");
+  updateData();
+  calculateUpgrade();
+  updateDisplay();
+}
+
+function updateDisplay(){
+  console.log("totalGold: " + totalGold);
+  console.log("totalTime: " + totalTime + " days");
+  info += "\nTOTAL GOLD NEEDED: " + totalGold + "\nTIME TO MAX IN DAYS: " + totalTime + " days";
+  info += "\nTOTAL CARDS COMMON: " + totalCardAmountCOMMON;
+  info += "\nTOTAL CARDS RARE: " + totalCardAmountRARE;
+  info += "\nTOTAL CARDS EPIC: " + totalCardAmountEPIC;
+  info += "\nTOTAL CARDS LEGENDARY: " + totalCardAmountLEGENDARY + "\n";
+  info += JSON.stringify(deck);
+  setText("txt_area_calc", info);
+  console.log("deck: ");
+  console.log(deck);
+}
+
+function updateData(){
+  console.log("updateData()");
+  for (var i = 1; i < 9; i++) {
+    deck[i]["name"] = "";
+    deck[i]["level"] = "";
+    deck[i]["cardAmount"] = "";
+  }
+  for (var i = 1; i < 9; i++) {
+    deck[i]["name"] = getText("card"+i);
+    deck[i]["level"] = getText("card"+i+"_level");
+    deck[i]["cardAmount"] = getText("card"+i+"_amount");
+    console.log(deck[i]);
+  }
+  totalGold = 0;
+  totalTime = 0;
+  totalCardAmountCOMMON = 0;
+  totalCardAmountRARE = 0;
+  totalCardAmountEPIC = 0;
+  totalCardAmountLEGENDARY = 0;
+  info = "";
+  findRarity();
+  catchError();
+}
+function calculateUpgrade() {
+  console.log("calculateUpgrade()");
+  findCost();
+  findCardAmount();
+  findTime();
+}
+
+function catchError(){
+  for (var i = 1; i < 9; i++) {
+    if (getText("card"+i+"_level") == "") {
+      if (deck[i]["rarity"] == "COMMON") {
+        deck[i]["level"] = 1;
+      } else if (deck[i]["rarity"] == "RARE") {
+        deck[i]["level"] = 3;
+      } else if (deck[i]["rarity"] == "EPIC") {
+        deck[i]["level"] = 6;
+      } else if (deck[i]["rarity"] == "LEGENDARY") {
+        deck[i]["level"] = 9;
+      }
+    }
+    if (getText("card"+i+"_amount") == "") {
+      deck[i]["cardAmount"] = 1;
+    }
+  }
+}
+
+function findCost(){
+  console.log("findCost()");
+  for (var i = 1; i < 9; i++) {
+    if (deck[i]["level"] != 13) {
+      var level = deck[i]["level"];
+      var goldCount = 0;
+      while (level != 13) {
+        level++;
+        var addGold = upgradeCost[level];
+        goldCount += addGold;
+        deck[i]["cost"] = addGold
+      }
+      deck[i]["cost"] = goldCount;
+    } else {
+      deck[i]["cost"] = 0;
+    }
+  }
+  calcCost();
+}
+
+function calcCost(){
+  console.log("calcCost()");
+  for (var i = 1; i < 9; i++) {
+    totalGold += deck[i]["cost"];
+    var lazy3 = deck[i]["name"];
+    var lazy4 = deck[i]["cost"];
+    console.log("CARD" + i + ": " + lazy3 + " COST: " + lazy4);
+    info += "\nCARD" + i + ": " + lazy3 + " COST: " + lazy4;
+  }
+  console.log("TOTAL COST: " + totalGold);
+}
+
+function findTime(){
+  console.log("findTime()");
+  for (var i = 1; i < 9; i++) {
+    var weeks = 0;
+    if (deck[i]["level"] != 13) {
+      if (deck[i]["rarity"] == "COMMON") {
+        weeks = deck[i]["cardNeeded"] / 1090;
+        deck[i]["time"] = weeks * 7;
+      } else if (deck[i]["rarity"] == "RARE") {
+        weeks = deck[i]["cardNeeded"] / 109;
+        deck[i]["time"] = weeks * 7;
+      } else if (deck[i]["rarity"] == "EPIC") {
+        weeks = deck[i]["cardNeeded"] / 9;
+        deck[i]["time"] = weeks * 7;
+      } else if (deck[i]["rarity"] == "LEGENDARY") {
+        weeks = deck[i]["cardNeeded"] / 0.75;
+        deck[i]["time"] = weeks * 7;
+      }
+    } else {
+      deck[i]["time"] = 0;
+    }
+    var lazy5 = deck[i]["name"];
+    var lazy6 = deck[i]["time"];
+    console.log("CARD" + i + ": " + lazy5 + " TIME IN DAYS: " + lazy6);
+    info += "\nCARD" + i + ": " + lazy5 + " TIME IN DAYS: " + lazy6;
+  }
+  calcTime();
+}
+
+function calcTime() {
+  console.log("calcTime()");
+  var time = 0;
+  var toggle = false;
+  for (var i = 1; i < 9; i++) {
+    if (deck[i]["rarity"] == "COMMON" || deck[i]["rarity"] == "RARE") {
+      time += deck[i]["time"];
+    }
+  }
+  for (var i = 1; i < 9; i++) {
+    if (time < deck[i]["time"]) {
+      time = deck[i]["time"];
+    }
+  }
+  totalTime = time;
+  console.log("TOTAL TIME IN DAYS: " + totalTime);
+}
+
+function findCardAmount(){
+  console.log("findCardAmount()");
+  for (var i = 1; i < 9; i++) {
+    if (deck[i]["level"] != 13) {
+      var level = deck[i]["level"];
+      var cardCount = 0;
+      if (deck[i]["rarity"] == "COMMON") {
+        level++;
+        cardCount += cardAmountCommon[level] - deck[i]["cardAmount"];
+        while (level != 13) {
+          level++;
+          cardCount += parseInt(cardAmountCommon[level]);
+        }
+      } else if (deck[i]["rarity"] == "RARE") {
+        level++;
+        cardCount += cardAmountRare[level] - deck[i]["cardAmount"];
+        while (level != 13) {
+          level++;
+          cardCount += parseInt(cardAmountRare[level]);
+        }
+      } else if (deck[i]["rarity"] == "EPIC") {
+        level++;
+        cardCount += cardAmountEpic[level] - deck[i]["cardAmount"];
+        while (level != 13) {
+          level++;
+          cardCount += parseInt(cardAmountEpic[level]);
+        }
+      } else if (deck[i]["rarity"] == "LEGENDARY") {
+        level++;
+        cardCount += cardAmountLegendary[level] - deck[i]["cardAmount"];
+        while (level != 13) {
+          level++;
+          cardCount += parseInt(cardAmountLegendary[level]);
+        }
+      }
+      deck[i]["cardNeeded"] = cardCount;
+    } else {
+      deck[i]["cardNeeded"] = 0;
+    }
+    var lazy2 = deck[i]["name"];
+    var lazy8 = deck[i]["cardNeeded"];
+    console.log("CARD" + i + ": " + lazy2 + " CARDS NEEDED: " + lazy8);
+    info += "\nCARD" + i + ": " + lazy2 + " CARDS NEEDED: " + lazy8;
+  }
+  calcCardAmount();
+}
+
+function calcCardAmount(){
+  for (var i = 1; i < 9; i++) {
+    //(totalCardAmount + deck[i]["rarity"]) += deck[i][cardNeeded]; concatenation with variables???
+    if (deck[i]["rarity"] == "COMMON") {
+      totalCardAmountCOMMON += deck[i]["cardNeeded"];
+    } else if (deck[i]["rarity"] == "RARE") {
+      totalCardAmountRARE += deck[i]["cardNeeded"];
+    } else if (deck[i]["rarity"] == "EPIC") {
+      totalCardAmountEPIC += deck[i]["cardNeeded"];
+    } else if (deck[i]["rarity"] == "LEGENDARY") {
+      totalCardAmountLEGENDARY += deck[i]["cardNeeded"];
+    } 
+  }
+  console.log("totalCardAmountCOMMON: " + totalCardAmountCOMMON);
+  console.log("totalCardAmountRARE: " + totalCardAmountRARE);
+  console.log("totalCardAmountEPIC: " + totalCardAmountEPIC);
+  console.log("totalCardAmountLEGENDARY: " + totalCardAmountLEGENDARY);
+}
+function findRarity(){
+  console.log("findRarity()");
+  for (var i = 1; i < 9; i++) {
+    result = rarity[deck[i]["name"]];
+    var lazy = deck[i]["name"];
+    console.log(lazy + " RARITY: " + result);
+    deck[i]["rarity"] = result;
+  }
+}
+
+onEvent("btn_update", "click", function(event) {
+  console.log("btn_update clicked!");
+  deckUpgrade();
+});
