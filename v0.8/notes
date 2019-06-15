@@ -1,2 +1,3 @@
-- most calculations needed were coded by this time
-- ui was unintuitive, unlabeled textboxes
+- most of the code for calculations were already written by then
+- ui was starting to take shape. a dropdown containing card names, textboxes for card level and card amount
+- ui lacking labels. also could only display total gold cost and time, not for each individual card
