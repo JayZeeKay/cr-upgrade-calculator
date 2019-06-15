@@ -26,4 +26,5 @@ There are more stats but these are the ones of focus. With this, we can then inf
 ## Improvements over v1
 * It can make use of Clash Royale's API and completely eliminate the need to manually enter in deck data.
 * It can calculate decks for levels besides max. (level 13)
-* It may be implemented into its own website one day...
+* It may be implemented into its own website one day... (can learn HTML and CSS from freecodecamp)
+* For now, it'll be something to be ran in command line. Oh well
