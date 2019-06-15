@@ -25,6 +25,7 @@ There are more stats but these are the ones of focus. With this, we can then inf
 * The cost to upgrade a card to a certain level
 * The amount of cards needed to upgrade a card to a certain level
 * The estimated time it will take to get the necessary resources (gold, amount of cards) to upgrade a card to a certain level.
+* The experience gained from upgrading a card (almsot forgot about that one pff)
 
 ## Features of v1.x
 * Shows 8 deck slots, each to be inputted a card name, card level, and card amount
