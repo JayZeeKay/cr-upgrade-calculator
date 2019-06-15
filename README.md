@@ -17,14 +17,16 @@ There are more stats but these are the ones of focus. With this, we can then inf
 * The amount of cards needed to upgrade a card to a certain level
 * The estimated time it will take to get the necessary resources (gold, amount of cards) to upgrade a card to a certain level.
 
-## Features of v1
+## Features of v1.x
 * Shows 8 deck slots, each to be inputted a card name, card level, and card amount
 * A button for starting the calculation
 * A print screen at the bottom displaying necessary cost, amount, and estimated time for each card to max out (get upgraded to the max level) as well as the whole deck
 * Later changes added an options menu but was flawed
+* JavaScript (code.org App Lab)
 
-## Improvements over v1
-* It can make use of Clash Royale's API and completely eliminate the need to manually enter in deck data.
+## v2.0: Improvements over v1.x
+* It can make use of Clash Royale's API (made a dev account!) and completely eliminate the need to manually enter in deck data.
 * It can calculate decks for levels besides max. (level 13)
 * It may be implemented into its own website one day... (can learn HTML and CSS from freecodecamp)
 * For now, it'll be something to be ran in command line. Oh well
+* Python
