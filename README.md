@@ -17,7 +17,7 @@ There are more stats but these are the ones of focus. With this, we can then inf
 * The amount of cards needed to upgrade a card to a certain level
 * The estimated time it will take to get the necessary resources (gold, amount of cards) to upgrade a card to a certain level.
 
-## Featues of v1
+## Features of v1
 * Shows 8 deck slots, each to be inputted a card name, card level, and card amount
 * A button for starting the calculation
 * A print screen at the bottom displaying necessary cost, amount, and estimated time for each card to max out (get upgraded to the max level) as well as the whole deck
