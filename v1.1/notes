@@ -1,0 +1,3 @@
+- settings button created
+- included parameters like level to upgrade deck to, budget
+- EXCEPT they were only added as UI elements but not yet coded in...
